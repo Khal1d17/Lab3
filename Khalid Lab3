@@ -1,0 +1,11 @@
+import math 
+x=0.9
+epsilon=0.001
+s=1
+n=2
+cem=(x**n) / math.factorial(n)
+while cem > epsilon:
+    s += cem
+    n += 2 
+    cem=(x**n) / math.factorial(n)
+print(s)
